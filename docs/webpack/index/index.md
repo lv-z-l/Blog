@@ -47,31 +47,31 @@ eg：
 
 ### 模块化优点
 
-作用域封装
+- 作用域封装
 
-重用性
+- 重用性
 
-解除模块之间耦合， 提高系统的可维护性
+- 解除模块之间耦合， 提高系统的可维护性
 
 ### 模块化发展
 
-详情见链接：
+[JavaScript早期实现模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/early.html)
 
-[JavaScript早期实现模块化]([JavaScript早期实现模块化 - lvzl - 博客园 (cnblogs.com)](https://www.cnblogs.com/lvzl/p/14780565.html))
+[AMD模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/amd.html)
 
-[AMD模块化]([JavaScript AMD模块化规范 - lvzl - 博客园 (cnblogs.com)](https://www.cnblogs.com/lvzl/p/14144285.html))
+[CMD模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/cmd.html)
 
-[CMD模块化]([JavaScript CMD规范 - lvzl - 博客园 (cnblogs.com)](https://www.cnblogs.com/lvzl/p/14147940.html))
+[CommonJs模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/commonjs.html)
 
-[ES6模块化]([JS模块化 - lvzl - 博客园 (cnblogs.com)](https://www.cnblogs.com/lvzl/p/14782995.html))
+[ES6模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/es6_module.html)
 
 ### 打包工具
 
-gulp
+- gulp
 
-GRUNT
+- GRUNT
 
-webpack
+- webpack
 
 > 区别：前两者定位都是实现一个自动化构建工具，帮助程序员完成那些需要重复的操作。而webpack则是专注于打包。
 

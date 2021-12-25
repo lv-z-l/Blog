@@ -5,37 +5,43 @@ module.exports = {
     base: '/blog/',
     theme: 'reco',
     themeConfig: {
+        // logo: '',
         nav: [
             {
+                text: 'Html & css',
+                link: '/html5/'
+            },
+            {
                 text: 'JavaScript',
-                link: '/js/basic/'
+                link: '/js/basic/jsbasic'
             },
             {
-                text: '手写',
-                link: '/write/'
+                text: '流行框架',
+                items: [
+                    { text: 'Vue', link: '/vue/' },
+                    { text: 'React', link: '/react/' }
+                ]
             },
             {
-                text: 'Vue',
-                link: '/vue/'
-            },
-            {
-                text: 'react',
-                link: '/react/'
-            },
-            {
-                text: '算法',
-                link: '/algorithm/'
-            },
-            {
-                text: 'WebPack',
-                link: '/webpack/index/'
-            },
-            {
-                text: 'More',
-                link: '/more/'
+                text: '更多',
+                link: '/more/',
+                items: [
+                    { text: 'WebPack', link: '/webpack/index/' },
+                    { text: '算法', link: '/algorithm/' },
+                    { text: '手写', link: '/write/' },
+                    { text: '设计模式', link: '/designmode/' },
+                ]
             }
         ],
         sidebar: {
+            '/html5/': [
+                {
+                    title: 'Html相关',
+                    collapsable: false,
+                    children: [
+                    ]
+                }
+            ],
             '/js/': [
                 {
                     title: '基础知识',
@@ -48,17 +54,31 @@ module.exports = {
                     title: '深入知识',
                     collapsable: false,
                     children: [
+                        'deep/deep',
+                        'deep/function',
+                        {
+                            title: '模块化',
+                            collapsable: false,
+                            children: [
+                                'deep/module/amd',
+                                'deep/module/cmd',
+                                'deep/module/commonjs',
+                                'deep/module/early',
+                                'deep/module/es6_module'
+                            ]
+                        }
                     ]
                 },
                 {
-                    title: '模块化',
+                    title: '内功修炼',
                     collapsable: false,
                     children: [
-                        'module/amd',
-                        'module/cmd',
-                        'module/commonjs',
-                        'module/early',
-                        'module/es6_module'
+                        'intention/memory',
+                        {
+                            title: '你需要知道的JS异步执行机制',
+                            path: 'intention/excuterule'
+                        }
+                       
                     ]
                 }
             ],
@@ -83,7 +103,7 @@ module.exports = {
                     title: 'WebPack',
                     collapsable: false,
                     children: [
-                        ['index/', 'webpack Introduction']
+                        'index'
                     ]
                 }
             ],
@@ -104,7 +124,14 @@ module.exports = {
                     ]
                 }
             ],
-            '/write': [
+            '/write/': [
+                {
+                    title: '手写系列',
+                    collapsable: false,
+                    children: [
+                        'test'
+                    ]
+                }
             ]
 
         },
