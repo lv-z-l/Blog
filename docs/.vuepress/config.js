@@ -24,9 +24,8 @@ module.exports = {
             },
             {
                 text: '更多',
-                link: '/more/',
                 items: [
-                    { text: 'WebPack', link: '/webpack/index/' },
+                    { text: 'WebPack', link: '/pack/' },
                     { text: '算法', link: '/algorithm/' },
                     { text: '手写', link: '/write/' },
                     { text: '设计模式', link: '/designmode/' },
@@ -98,12 +97,13 @@ module.exports = {
                     ]
                 }
             ],
-            '/webpack/': [
+            '/pack/': [
                 {
-                    title: 'WebPack',
+                    title: 'WebPack相关',
                     collapsable: false,
                     children: [
-                        'index'
+                        'testpack',
+                        'webpackbase'
                     ]
                 }
             ],

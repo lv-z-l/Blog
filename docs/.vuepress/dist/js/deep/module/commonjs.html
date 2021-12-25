@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CommonJS规范 | Blog</title>
+    <meta name="generator" content="VuePress 1.9.1">
+    
+    <meta name="description" content="啊！朕学不动了">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.0b264fdc.css" as="style"><link rel="preload" href="/blog/assets/js/app.66bf980e.js" as="script"><link rel="preload" href="/blog/assets/js/3.d6f547a4.js" as="script"><link rel="preload" href="/blog/assets/js/1.b26f7161.js" as="script"><link rel="preload" href="/blog/assets/js/25.ea7634e1.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.0b11cee9.js"><link rel="prefetch" href="/blog/assets/js/11.e5406847.js"><link rel="prefetch" href="/blog/assets/js/12.5bc40e6d.js"><link rel="prefetch" href="/blog/assets/js/13.625b5043.js"><link rel="prefetch" href="/blog/assets/js/14.436b1185.js"><link rel="prefetch" href="/blog/assets/js/15.b6abd0fc.js"><link rel="prefetch" href="/blog/assets/js/16.55452ec2.js"><link rel="prefetch" href="/blog/assets/js/17.6106d47b.js"><link rel="prefetch" href="/blog/assets/js/18.074a5ced.js"><link rel="prefetch" href="/blog/assets/js/19.4ad26144.js"><link rel="prefetch" href="/blog/assets/js/20.14998ccc.js"><link rel="prefetch" href="/blog/assets/js/21.e6679d41.js"><link rel="prefetch" href="/blog/assets/js/22.406a96f1.js"><link rel="prefetch" href="/blog/assets/js/23.9e2af169.js"><link rel="prefetch" href="/blog/assets/js/24.1bde0b9c.js"><link rel="prefetch" href="/blog/assets/js/26.e2633072.js"><link rel="prefetch" href="/blog/assets/js/27.df70d425.js"><link rel="prefetch" href="/blog/assets/js/28.6aa8f009.js"><link rel="prefetch" href="/blog/assets/js/29.1482220c.js"><link rel="prefetch" href="/blog/assets/js/30.98b4d663.js"><link rel="prefetch" href="/blog/assets/js/31.11aa1fee.js"><link rel="prefetch" href="/blog/assets/js/32.d6041c61.js"><link rel="prefetch" href="/blog/assets/js/33.d459dd38.js"><link rel="prefetch" href="/blog/assets/js/34.93f1d061.js"><link rel="prefetch" href="/blog/assets/js/4.2064d4f2.js"><link rel="prefetch" href="/blog/assets/js/5.167c1fe2.js"><link rel="prefetch" href="/blog/assets/js/6.1bbf5093.js"><link rel="prefetch" href="/blog/assets/js/7.12674e13.js"><link rel="prefetch" href="/blog/assets/js/8.6d569f77.js"><link rel="prefetch" href="/blog/assets/js/9.5de7500c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.0b264fdc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Blog</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>啊！朕学不动了</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/html5/" class="nav-link"><i class="undefined"></i>
+  Html &amp; css
+</a></div><div class="nav-item"><a href="/blog/js/basic/jsbasic.html" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      流行框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/react/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      更多
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pack/" class="nav-link"><i class="undefined"></i>
+  WebPack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/algorithm/" class="nav-link"><i class="undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/blog/write/" class="nav-link"><i class="undefined"></i>
+  手写
+</a></li><li class="dropdown-item"><!----> <a href="/blog/designmode/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li></ul></div></div> <a href="https://github.com/blog" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-查看源码"></i>
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>18</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/html5/" class="nav-link"><i class="undefined"></i>
+  Html &amp; css
+</a></div><div class="nav-item"><a href="/blog/js/basic/jsbasic.html" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      流行框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/react/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      更多
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pack/" class="nav-link"><i class="undefined"></i>
+  WebPack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/algorithm/" class="nav-link"><i class="undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/blog/write/" class="nav-link"><i class="undefined"></i>
+  手写
+</a></li><li class="dropdown-item"><!----> <a href="/blog/designmode/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li></ul></div></div> <a href="https://github.com/blog" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-查看源码"></i>
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/basic/jsbasic.html" class="sidebar-link">JavaScript基础</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>深入知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/deep/deep.html" class="sidebar-link">进阶相关总览</a></li><li><a href="/blog/js/deep/function.html" class="sidebar-link">深入理解函数</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>模块化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/deep/module/amd.html" class="sidebar-link">AMD 模块化</a></li><li><a href="/blog/js/deep/module/cmd.html" class="sidebar-link">CMD 模块化</a></li><li><a href="/blog/js/deep/module/commonjs.html" aria-current="page" class="active sidebar-link">CommonJS规范</a></li><li><a href="/blog/js/deep/module/early.html" class="sidebar-link">早期实现模块化</a></li><li><a href="/blog/js/deep/module/es6_module.html" class="sidebar-link">JS模块化</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>内功修炼</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/intention/memory.html" class="sidebar-link">你需要了解的JavaScript内存</a></li><li><a href="/blog/js/intention/excuterule.html" class="sidebar-link">你需要知道的JS异步执行机制</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>CommonJS规范</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">CommonJS规范</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>lvzl</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p>Node 应用由模块组成，采用 CommonJS 模块规范。</p> <p>每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。</p> <div class="language- extra-class"><pre class="language-text"><code>// example.js
+var x = 5;
+var addX = function (value) {
+  return value + x;
+};
+</code></pre></div><p>上面代码中，变量<code>x</code>和函数<code>addX</code>，是当前文件<code>example.js</code>私有的，其他文件不可见。</p> <p>如果想在多个文件分享变量，必须定义为<code>global</code>对象的属性。</p> <div class="language- extra-class"><pre class="language-text"><code>global.warning = true;
+</code></pre></div><p>上面代码的<code>warning</code>变量，可以被所有文件读取。当然，这样写法是不推荐的。</p> <p>CommonJS规范规定，每个模块内部，<code>module</code>变量代表当前模块。这个变量是一个对象，它的<code>exports</code>属性（即<code>module.exports</code>）是对外的接口。加载某个模块，其实是加载该模块的<code>module.exports</code>属性。</p> <div class="language- extra-class"><pre class="language-text"><code>var x = 5;
+var addX = function (value) {
+  return value + x;
+};
+module.exports.x = x;
+module.exports.addX = addX;
+</code></pre></div><p>上面代码通过<code>module.exports</code>输出变量<code>x</code>和函数<code>addX</code>。</p> <p><code>require</code>方法用于加载模块。</p> <div class="language- extra-class"><pre class="language-text"><code>var example = require('./example.js');
+
+console.log(example.x); // 5
+console.log(example.addX(1)); // 6
+</code></pre></div><p><code>require</code>方法的详细解释参见《Require命令》一节。</p> <p>CommonJS模块的特点如下。</p> <ul><li>所有代码都运行在模块作用域，不会污染全局作用域。</li> <li>模块可以多次加载，但是只会在第一次加载时运行一次，然后运行结果就被缓存了，以后再加载，就直接读取缓存结果。要想让模块再次运行，必须清除缓存。</li> <li>模块加载的顺序，按照其在代码中出现的顺序。</li></ul> <h2 id="module对象"><a href="#module对象" class="header-anchor">#</a> module对象</h2> <p>Node内部提供一个<code>Module</code>构建函数。所有模块都是<code>Module</code>的实例。</p> <div class="language- extra-class"><pre class="language-text"><code>function Module(id, parent) {
+  this.id = id;
+  this.exports = {};
+  this.parent = parent;
+  // ...
+</code></pre></div><p>每个模块内部，都有一个<code>module</code>对象，代表当前模块。它有以下属性。</p> <ul><li><code>module.id</code> 模块的识别符，通常是带有绝对路径的模块文件名。</li> <li><code>module.filename</code> 模块的文件名，带有绝对路径。</li> <li><code>module.loaded</code> 返回一个布尔值，表示模块是否已经完成加载。</li> <li><code>module.parent</code> 返回一个对象，表示调用该模块的模块。</li> <li><code>module.children</code> 返回一个数组，表示该模块要用到的其他模块。</li> <li><code>module.exports</code> 表示模块对外输出的值。</li></ul> <p>下面是一个示例文件，最后一行输出module变量。</p> <div class="language- extra-class"><pre class="language-text"><code>// example.js
+var jquery = require('jquery');
+exports.$ = jquery;
+console.log(module);
+</code></pre></div><p>执行这个文件，命令行会输出如下信息。</p> <div class="language- extra-class"><pre class="language-text"><code>{ id: '.',
+  exports: { '$': [Function] },
+  parent: null,
+  filename: '/path/to/example.js',
+  loaded: false,
+  children:
+   [ { id: '/path/to/node_modules/jquery/dist/jquery.js',
+       exports: [Function],
+       parent: [Circular],
+       filename: '/path/to/node_modules/jquery/dist/jquery.js',
+       loaded: true,
+       children: [],
+       paths: [Object] } ],
+  paths:
+   [ '/home/user/deleted/node_modules',
+     '/home/user/node_modules',
+     '/home/node_modules',
+     '/node_modules' ]
+}
+</code></pre></div><p>如果在命令行下调用某个模块，比如<code>node something.js</code>，那么<code>module.parent</code>就是<code>null</code>。如果是在脚本之中调用，比如<code>require('./something.js')</code>，那么<code>module.parent</code>就是调用它的模块。利用这一点，可以判断当前模块是否为入口脚本。</p> <div class="language- extra-class"><pre class="language-text"><code>if (!module.parent) {
+    // ran with `node something.js`
+    app.listen(8088, function() {
+        console.log('app listening on port 8088');
+    })
+} else {
+    // used with `require('/.something.js')`
+    module.exports = app;
+}
+</code></pre></div><h3 id="module-exports属性"><a href="#module-exports属性" class="header-anchor">#</a> module.exports属性</h3> <p><code>module.exports</code>属性表示当前模块对外输出的接口，其他文件加载该模块，实际上就是读取<code>module.exports</code>变量。</p> <div class="language- extra-class"><pre class="language-text"><code>var EventEmitter = require('events').EventEmitter;
+module.exports = new EventEmitter();
+
+setTimeout(function() {
+  module.exports.emit('ready');
+}, 1000);
+</code></pre></div><p>上面模块会在加载后1秒后，发出ready事件。其他文件监听该事件，可以写成下面这样。</p> <div class="language- extra-class"><pre class="language-text"><code>var a = require('./a');
+a.on('ready', function() {
+  console.log('module a is ready');
+});
+</code></pre></div><h3 id="exports变量"><a href="#exports变量" class="header-anchor">#</a> exports变量</h3> <p>为了方便，Node为每个模块提供一个exports变量，指向module.exports。这等同在每个模块头部，有一行这样的命令。</p> <div class="language- extra-class"><pre class="language-text"><code>var exports = module.exports;
+</code></pre></div><p>造成的结果是，在对外输出模块接口时，可以向exports对象添加方法。</p> <div class="language- extra-class"><pre class="language-text"><code>exports.area = function (r) {
+  return Math.PI * r * r;
+};
+
+exports.circumference = function (r) {
+  return 2 * Math.PI * r;
+};
+</code></pre></div><p>注意，不能直接将exports变量指向一个值，因为这样等于切断了<code>exports</code>与<code>module.exports</code>的联系。</p> <div class="language- extra-class"><pre class="language-text"><code>exports = function(x) {console.log(x)};
+</code></pre></div><p>上面这样的写法是无效的，因为<code>exports</code>不再指向<code>module.exports</code>了。</p> <p>下面的写法也是无效的。</p> <div class="language- extra-class"><pre class="language-text"><code>exports.hello = function() {
+  return 'hello';
+};
+
+module.exports = 'Hello world';
+</code></pre></div><p>上面代码中，<code>hello</code>函数是无法对外输出的，因为<code>module.exports</code>被重新赋值了。</p> <p>这意味着，如果一个模块的对外接口，就是一个单一的值，不能使用<code>exports</code>输出，只能使用<code>module.exports</code>输出。</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = function (x){ console.log(x);};
+</code></pre></div><p>如果你觉得，<code>exports</code>与<code>module.exports</code>之间的区别很难分清，一个简单的处理方法，就是放弃使用<code>exports</code>，只使用<code>module.exports</code>。</p> <h2 id="amd规范与commonjs规范的兼容性"><a href="#amd规范与commonjs规范的兼容性" class="header-anchor">#</a> AMD规范与CommonJS规范的兼容性</h2> <p>CommonJS规范加载模块是同步的，也就是说，只有加载完成，才能执行后面的操作。AMD规范则是非同步加载模块，允许指定回调函数。由于Node.js主要用于服务器编程，模块文件一般都已经存在于本地硬盘，所以加载起来比较快，不用考虑非同步加载的方式，所以CommonJS规范比较适用。但是，如果是浏览器环境，要从服务器端加载模块，这时就必须采用非同步模式，因此浏览器端一般采用AMD规范。</p> <p>AMD规范使用define方法定义模块，下面就是一个例子：</p> <div class="language- extra-class"><pre class="language-text"><code>define(['package/lib'], function(lib){
+  function foo(){
+    lib.log('hello world!');
+  }
+
+  return {
+    foo: foo
+  };
+});
+</code></pre></div><p>AMD规范允许输出的模块兼容CommonJS规范，这时<code>define</code>方法需要写成下面这样：</p> <div class="language- extra-class"><pre class="language-text"><code>define(function (require, exports, module){
+  var someModule = require(&quot;someModule&quot;);
+  var anotherModule = require(&quot;anotherModule&quot;);
+
+  someModule.doTehAwesome();
+  anotherModule.doMoarAwesome();
+
+  exports.asplode = function (){
+    someModule.doTehAwesome();
+    anotherModule.doMoarAwesome();
+  };
+});
+</code></pre></div><h2 id="require命令"><a href="#require命令" class="header-anchor">#</a> require命令</h2> <h3 id="基本用法"><a href="#基本用法" class="header-anchor">#</a> 基本用法</h3> <p>Node使用CommonJS模块规范，内置的<code>require</code>命令用于加载模块文件。</p> <p><code>require</code>命令的基本功能是，读入并执行一个JavaScript文件，然后返回该模块的exports对象。如果没有发现指定模块，会报错。</p> <div class="language- extra-class"><pre class="language-text"><code>// example.js
+var invisible = function () {
+  console.log(&quot;invisible&quot;);
+}
+
+exports.message = &quot;hi&quot;;
+
+exports.say = function () {
+  console.log(message);
+}
+</code></pre></div><p>运行下面的命令，可以输出exports对象。</p> <div class="language- extra-class"><pre class="language-text"><code>var example = require('./example.js');
+example
+// {
+//   message: &quot;hi&quot;,
+//   say: [Function]
+// }
+</code></pre></div><p>如果模块输出的是一个函数，那就不能定义在exports对象上面，而要定义在<code>module.exports</code>变量上面。</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = function () {
+  console.log(&quot;hello world&quot;)
+}
+
+require('./example2.js')()
+</code></pre></div><p>上面代码中，require命令调用自身，等于是执行<code>module.exports</code>，因此会输出 hello world。</p> <h3 id="加载规则"><a href="#加载规则" class="header-anchor">#</a> 加载规则</h3> <p><code>require</code>命令用于加载文件，后缀名默认为<code>.js</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>var foo = require('foo');
+//  等同于
+var foo = require('foo.js');
+</code></pre></div><p>根据参数的不同格式，<code>require</code>命令去不同路径寻找模块文件。</p> <p>（1）如果参数字符串以“/”开头，则表示加载的是一个位于绝对路径的模块文件。比如，<code>require('/home/marco/foo.js')</code>将加载<code>/home/marco/foo.js</code>。</p> <p>（2）如果参数字符串以“./”开头，则表示加载的是一个位于相对路径（跟当前执行脚本的位置相比）的模块文件。比如，<code>require('./circle')</code>将加载当前脚本同一目录的<code>circle.js</code>。</p> <p>（3）如果参数字符串不以“./“或”/“开头，则表示加载的是一个默认提供的核心模块（位于Node的系统安装目录中），或者一个位于各级node_modules目录的已安装模块（全局安装或局部安装）。</p> <p>举例来说，脚本<code>/home/user/projects/foo.js</code>执行了<code>require('bar.js')</code>命令，Node会依次搜索以下文件。</p> <ul><li>/usr/local/lib/node/bar.js</li> <li>/home/user/projects/node_modules/bar.js</li> <li>/home/user/node_modules/bar.js</li> <li>/home/node_modules/bar.js</li> <li>/node_modules/bar.js</li></ul> <p>这样设计的目的是，使得不同的模块可以将所依赖的模块本地化。</p> <p>（4）如果参数字符串不以“./“或”/“开头，而且是一个路径，比如<code>require('example-module/path/to/file')</code>，则将先找到<code>example-module</code>的位置，然后再以它为参数，找到后续路径。</p> <p>（5）如果指定的模块文件没有发现，Node会尝试为文件名添加<code>.js</code>、<code>.json</code>、<code>.node</code>后，再去搜索。<code>.js</code>件会以文本格式的JavaScript脚本文件解析，<code>.json</code>文件会以JSON格式的文本文件解析，<code>.node</code>文件会以编译后的二进制文件解析。</p> <p>（6）如果想得到<code>require</code>命令加载的确切文件名，使用<code>require.resolve()</code>方法。</p> <h3 id="目录的加载规则"><a href="#目录的加载规则" class="header-anchor">#</a> 目录的加载规则</h3> <p>通常，我们会把相关的文件会放在一个目录里面，便于组织。这时，最好为该目录设置一个入口文件，让<code>require</code>方法可以通过这个入口文件，加载整个目录。</p> <p>在目录中放置一个<code>package.json</code>文件，并且将入口文件写入<code>main</code>字段。下面是一个例子。</p> <div class="language- extra-class"><pre class="language-text"><code>// package.json
+{ &quot;name&quot; : &quot;some-library&quot;,
+  &quot;main&quot; : &quot;./lib/some-library.js&quot; }
+</code></pre></div><p><code>require</code>发现参数字符串指向一个目录以后，会自动查看该目录的<code>package.json</code>文件，然后加载<code>main</code>字段指定的入口文件。如果<code>package.json</code>文件没有<code>main</code>字段，或者根本就没有<code>package.json</code>文件，则会加载该目录下的<code>index.js</code>文件或<code>index.node</code>文件。</p> <h3 id="模块的缓存"><a href="#模块的缓存" class="header-anchor">#</a> 模块的缓存</h3> <p>第一次加载某个模块时，Node会缓存该模块。以后再加载该模块，就直接从缓存取出该模块的<code>module.exports</code>属性。</p> <div class="language- extra-class"><pre class="language-text"><code>require('./example.js');
+require('./example.js').message = &quot;hello&quot;;
+require('./example.js').message
+// &quot;hello&quot;
+</code></pre></div><p>上面代码中，连续三次使用<code>require</code>命令，加载同一个模块。第二次加载的时候，为输出的对象添加了一个<code>message</code>属性。但是第三次加载的时候，这个message属性依然存在，这就证明<code>require</code>命令并没有重新加载模块文件，而是输出了缓存。</p> <p>如果想要多次执行某个模块，可以让该模块输出一个函数，然后每次<code>require</code>这个模块的时候，重新执行一下输出的函数。</p> <p>所有缓存的模块保存在<code>require.cache</code>之中，如果想删除模块的缓存，可以像下面这样写。</p> <div class="language- extra-class"><pre class="language-text"><code>// 删除指定模块的缓存
+delete require.cache[moduleName];
+
+// 删除所有模块的缓存
+Object.keys(require.cache).forEach(function(key) {
+  delete require.cache[key];
+})
+</code></pre></div><p>注意，缓存是根据绝对路径识别模块的，如果同样的模块名，但是保存在不同的路径，<code>require</code>命令还是会重新加载该模块。</p> <h3 id="环境变量node-path"><a href="#环境变量node-path" class="header-anchor">#</a> 环境变量NODE_PATH</h3> <p>Node执行一个脚本时，会先查看环境变量<code>NODE_PATH</code>。它是一组以冒号分隔的绝对路径。在其他位置找不到指定模块时，Node会去这些路径查找。</p> <p>可以将NODE_PATH添加到<code>.bashrc</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>export NODE_PATH=&quot;/usr/local/lib/node&quot;
+</code></pre></div><p>所以，如果遇到复杂的相对路径，比如下面这样。</p> <div class="language- extra-class"><pre class="language-text"><code>var myModule = require('../../../../lib/myModule');
+</code></pre></div><p>有两种解决方法，一是将该文件加入<code>node_modules</code>目录，二是修改<code>NODE_PATH</code>环境变量，<code>package.json</code>文件可以采用下面的写法。</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;node_path&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;NODE_PATH=lib node index.js&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+</code></pre></div><p><code>NODE_PATH</code>是历史遗留下来的一个路径解决方案，通常不应该使用，而应该使用<code>node_modules</code>目录机制。</p> <h3 id="模块的循环加载"><a href="#模块的循环加载" class="header-anchor">#</a> 模块的循环加载</h3> <p>如果发生模块的循环加载，即A加载B，B又加载A，则B将加载A的不完整版本。</p> <div class="language- extra-class"><pre class="language-text"><code>// a.js
+exports.x = 'a1';
+console.log('a.js ', require('./b.js').x);
+exports.x = 'a2';
+
+// b.js
+exports.x = 'b1';
+console.log('b.js ', require('./a.js').x);
+exports.x = 'b2';
+
+// main.js
+console.log('main.js ', require('./a.js').x);
+console.log('main.js ', require('./b.js').x);
+</code></pre></div><p>上面代码是三个JavaScript文件。其中，a.js加载了b.js，而b.js又加载a.js。这时，Node返回a.js的不完整版本，所以执行结果如下。</p> <div class="language- extra-class"><pre class="language-text"><code>$ node main.js
+b.js  a1
+a.js  b2
+main.js  a2
+main.js  b2
+</code></pre></div><p>修改main.js，再次加载a.js和b.js。</p> <div class="language- extra-class"><pre class="language-text"><code>// main.js
+console.log('main.js ', require('./a.js').x);
+console.log('main.js ', require('./b.js').x);
+console.log('main.js ', require('./a.js').x);
+console.log('main.js ', require('./b.js').x);
+</code></pre></div><p>执行上面代码，结果如下。</p> <div class="language- extra-class"><pre class="language-text"><code>$ node main.js
+b.js  a1
+a.js  b2
+main.js  a2
+main.js  b2
+main.js  a2
+main.js  b2
+</code></pre></div><p>上面代码中，第二次加载a.js和b.js时，会直接从缓存读取exports属性，所以a.js和b.js内部的console.log语句都不会执行了。</p> <h3 id="require-main"><a href="#require-main" class="header-anchor">#</a> require.main</h3> <p><code>require</code>方法有一个<code>main</code>属性，可以用来判断模块是直接执行，还是被调用执行。</p> <p>直接执行的时候（<code>node module.js</code>），<code>require.main</code>属性指向模块本身。</p> <div class="language- extra-class"><pre class="language-text"><code>require.main === module
+// true
+</code></pre></div><p>调用执行的时候（通过<code>require</code>加载该脚本执行），上面的表达式返回false。</p> <h2 id="模块的加载机制"><a href="#模块的加载机制" class="header-anchor">#</a> 模块的加载机制</h2> <p>CommonJS模块的加载机制是，输入的是被输出的值的拷贝。也就是说，一旦输出一个值，模块内部的变化就影响不到这个值。请看下面这个例子。</p> <p>下面是一个模块文件<code>lib.js</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>// lib.js
+var counter = 3;
+function incCounter() {
+  counter++;
+}
+module.exports = {
+  counter: counter,
+  incCounter: incCounter,
+};
+</code></pre></div><p>上面代码输出内部变量<code>counter</code>和改写这个变量的内部方法<code>incCounter</code>。</p> <p>然后，加载上面的模块。</p> <div class="language- extra-class"><pre class="language-text"><code>// main.js
+var counter = require('./lib').counter;
+var incCounter = require('./lib').incCounter;
+
+console.log(counter);  // 3
+incCounter();
+console.log(counter); // 3
+</code></pre></div><p>上面代码说明，<code>counter</code>输出以后，<code>lib.js</code>模块内部的变化就影响不到<code>counter</code>了。</p> <h3 id="require的内部处理流程"><a href="#require的内部处理流程" class="header-anchor">#</a> require的内部处理流程</h3> <p><code>require</code>命令是CommonJS规范之中，用来加载其他模块的命令。它其实不是一个全局命令，而是指向当前模块的<code>module.require</code>命令，而后者又调用Node的内部命令<code>Module._load</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>Module._load = function(request, parent, isMain) {
+  // 1. 检查 Module._cache，是否缓存之中有指定模块
+  // 2. 如果缓存之中没有，就创建一个新的Module实例
+  // 3. 将它保存到缓存
+  // 4. 使用 module.load() 加载指定的模块文件，
+  //    读取文件内容之后，使用 module.compile() 执行文件代码
+  // 5. 如果加载/解析过程报错，就从缓存删除该模块
+  // 6. 返回该模块的 module.exports
+};
+</code></pre></div><p>上面的第4步，采用<code>module.compile()</code>执行指定模块的脚本，逻辑如下。</p> <div class="language- extra-class"><pre class="language-text"><code>Module.prototype._compile = function(content, filename) {
+  // 1. 生成一个require函数，指向module.require
+  // 2. 加载其他辅助方法到require
+  // 3. 将文件内容放到一个函数之中，该函数可调用 require
+  // 4. 执行该函数
+};
+</code></pre></div><p>上面的第1步和第2步，<code>require</code>函数及其辅助方法主要如下。</p> <ul><li><code>require()</code>: 加载外部模块</li> <li><code>require.resolve()</code>：将模块名解析到一个绝对路径</li> <li><code>require.main</code>：指向主模块</li> <li><code>require.cache</code>：指向所有缓存的模块</li> <li><code>require.extensions</code>：根据文件的后缀名，调用不同的执行函数</li></ul> <p>一旦<code>require</code>函数准备完毕，整个所要加载的脚本内容，就被放到一个新的函数之中，这样可以避免污染全局环境。该函数的参数包括<code>require</code>、<code>module</code>、<code>exports</code>，以及其他一些参数。</p> <div class="language- extra-class"><pre class="language-text"><code>(function (exports, require, module, __filename, __dirname) {
+  // YOUR CODE INJECTED HERE!
+});
+</code></pre></div><p><code>Module._compile</code>方法是同步执行的，所以<code>Module._load</code>要等它执行完成，才会向用户返回<code>module.exports</code>的值。</p></div></section> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/blog/edit/master/docs/.vuepress/dist/js/deep/module/commonjs.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2021-12-25 10:39:30 ├F10: PM┤</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/js/deep/module/cmd.html" class="prev">
+            CMD 模块化
+          </a></span> <span class="next"><a href="/blog/js/deep/module/early.html">
+            早期实现模块化
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.66bf980e.js" defer></script><script src="/blog/assets/js/3.d6f547a4.js" defer></script><script src="/blog/assets/js/1.b26f7161.js" defer></script><script src="/blog/assets/js/25.ea7634e1.js" defer></script>
+  </body>
+</html>
