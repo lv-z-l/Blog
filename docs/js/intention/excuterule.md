@@ -67,7 +67,7 @@ console.log(1);
 
 ## 流程图
 
-![](/assets/img/js_async_excute.jpg)
+![](/blog/assets/img/js_async_excute.jpg)
 
 ## 参考
 

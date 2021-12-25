@@ -102,8 +102,6 @@ module.exports = {
                     title: 'WebPack相关',
                     collapsable: false,
                     children: [
-                        'testpack',
-                        'webpackbase'
                     ]
                 }
             ],

@@ -26,7 +26,7 @@ author: lvzl
 
 32位：新生代16MB  老生代700MB
 
- ![V8内存分配](/assets/img/v8_memory.png)
+ ![V8内存分配](/blog/assets/img/v8_memory.png)
 
 ## 新生代内存
 
@@ -82,7 +82,7 @@ for (let i = 0; i < 15; i++) {
 }
 ```
 
-![image-20210108111222746](/assets/img/image-20210108111222746.png)
+![image-20210108111222746](/blog/assets/img/image-20210108111222746.png)
 
 在通过一个小例子来看下JS回收临时变量的过程：
 
@@ -112,7 +112,7 @@ setInterval(()=>{
 
 看图中圈出部分，已经进行了临时变量的回收。
 
-![image-20210108112442102](/assets/img/image-20210108112442102.png)
+![image-20210108112442102](/blog/assets/img/image-20210108112442102.png)
 
 ## 开发应该注意些什么
 
