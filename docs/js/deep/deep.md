@@ -2,4 +2,4 @@
 title: 进阶相关总览
 author: lvzl
 ---
-![](/blog/assets/img/js_deep.svg)
+<img :src="$withBase('/assets/img/js_deep.svg')"></img>

@@ -67,7 +67,7 @@ console.log(1);
 
 ## 流程图
 
-![](/blog/assets/img/js_async_excute.jpg)
+<img :src="$withBase('/assets/img/js_async_excute.jpg')"></img>
 
 ## 参考
 
