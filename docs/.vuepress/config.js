@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Blog',
-    description: '啊！朕学不动了',
+    description: '学海无涯，回头是岸',
     port: 6600,
     base: '/blog/',
     theme: 'reco',
@@ -127,7 +127,22 @@ module.exports = {
                     title: '手写系列',
                     collapsable: false,
                     children: [
-                        'test'
+                        'call_apply',
+                        'bind',
+                        'new',
+                        'promise',
+                        'instanceof',
+                        'objcreate'
+                    ]
+                }
+            ],
+            '/designmode/': [
+                {
+                    title: '设计模式',
+                    collapsable: false,
+                    children: [
+                        'single',
+                        'strategy'
                     ]
                 }
             ]
@@ -135,13 +150,11 @@ module.exports = {
         },
         lastUpdated: 'Last Updated', // string | boolean
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-        repo: 'blog',
+        repo: 'https://gitee.com/lvzhenglei/blog',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: '查看源码',
-
         // 以下为可选的编辑链接选项
-
         // 假如你的文档仓库和项目本身不在一个仓库：
         docsRepo: 'blog',
         // 假如文档不是放在仓库的根目录下：
@@ -149,7 +162,7 @@ module.exports = {
         // 假如文档放在一个特定的分支下：
         docsBranch: 'master',
         // 默认是 false, 设置为 true 来启用
-        editLinks: true,
+        editLinks: false,
         // 默认为 "Edit this page"
         editLinkText: '帮助我们改善此页面！'
     },
