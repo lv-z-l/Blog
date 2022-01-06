@@ -107,20 +107,31 @@ module.exports = {
             ],
             '/algorithm/': [
                 {
-                    title: '算法',
+                    title: '买卖股票问题',
                     collapsable: false,
                     children: [
-                        {
-                            title: '买卖股票问题',
-                            collapsable: false,
-                            children: [
-                                'agiotage/1',
-                                'agiotage/2',
-                                'agiotage/3'
-                            ]
-                        }
+                        'agiotage/1',
+                        'agiotage/2',
+                        'agiotage/3'
                     ]
-                }
+                },
+                {
+                    title: '链表相关',
+                    collapsable: false,
+                    children: [
+                        'linkedList/palindrome-linked-list',
+                        'linkedList/reverse-linked-list',
+                        'linkedList/merge-k-sorted-lists',
+                        'linkedList/reverse-nodes-in-k-group',
+                    ]
+                },
+                {
+                    title: '其他',
+                    collapsable: false,
+                    children: [
+                        'other/max-area',
+                    ]
+                },
             ],
             '/write/': [
                 {

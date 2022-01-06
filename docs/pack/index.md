@@ -55,15 +55,15 @@ eg：
 
 ### 模块化发展
 
-[JavaScript早期实现模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/early.html)
+[JavaScript早期实现模块化](js/deep/module/early.html)
 
-[AMD模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/amd.html)
+[AMD模块化](js/deep/module/amd.html)
 
-[CMD模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/cmd.html)
+[CMD模块化](js/deep/module/cmd.html)
 
-[CommonJs模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/commonjs.html)
+[CommonJs模块化](js/deep/module/commonjs.html)
 
-[ES6模块化](https://lvzhenglei.gitee.io/blog/js/deep/module/es6_module.html)
+[ES6模块化](js/deep/module/es6_module.html)
 
 ### 打包工具
 
