@@ -123,6 +123,7 @@ module.exports = {
                         'linkedList/reverse-linked-list',
                         'linkedList/merge-k-sorted-lists',
                         'linkedList/reverse-nodes-in-k-group',
+                        'linkedList/linked-list-cycle',
                     ]
                 },
                 {
