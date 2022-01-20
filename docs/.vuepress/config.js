@@ -124,6 +124,8 @@ module.exports = {
                         'linkedList/merge-k-sorted-lists',
                         'linkedList/reverse-nodes-in-k-group',
                         'linkedList/linked-list-cycle',
+                        'linkedList/intersect-linked-list',
+                        'linkedList/sort-list',
                     ]
                 },
                 {
