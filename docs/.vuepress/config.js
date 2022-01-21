@@ -47,6 +47,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'basic/jsbasic',
+                        'basic/es6'
                     ]
                 },
                 {

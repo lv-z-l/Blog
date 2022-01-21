@@ -1,38 +1,28 @@
 ---
-title: K 个一组翻转链表
+title: 链表反转
 author: lvzl
 ---
 
-来源 [LeeCode](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)
+来源 [LeeCode](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 > 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表
 
-> 输入：head = [1,2,3,4,5], k = 2
-> 输出：[2,1,4,3,5]
+> 输入：head = [1,2,3,4,5]
+> 输出：[5,4,3,2,1]
+
+> 输入：head = [1,2]
+> 输出：[2,1]
 
 ```js
-var reverseKGroup = function (head, k) {
-  let arr = [];
-  i = 0;
-  while (head) {
-    arr.push(head.val)
-    head = head.next
-    ++i
-    if (i === k) {
-      const current = arr.slice(arr.length - k, arr.length).reverse()
-      arr.splice(arr.length - k, k)
-      arr = arr.concat(current)
-      i = 0
-    }
-  }
-  let res = temp = new ListNode();
-  arr.forEach(item => {
-    temp.next = new ListNode(item)
-    temp = temp.next
-  })
-  return res.next
+var reverseList = function (head) {
+  let prev = null; //上一个
+  let current = head; // 当前
+  while (current) {
+    const next = current.next; // 
+    current.next = prev;
+    prev = current;
+    current = next;
+   }
+  return prev
 };
-
 ```
-
-
