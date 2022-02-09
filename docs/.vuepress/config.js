@@ -130,6 +130,15 @@ module.exports = {
                     ]
                 },
                 {
+                    title: '字符串相关',
+                    collapsable: false,
+                    children: [
+                        'string/longest-common-prefix',
+                        'string/longest-palindromic-substring',
+                        'string/longest-substring-without-repeating-characters',
+                    ]
+                },
+                {
                     title: '其他',
                     collapsable: false,
                     children: [
