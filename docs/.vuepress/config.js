@@ -136,6 +136,7 @@ module.exports = {
                         'string/longest-common-prefix',
                         'string/longest-palindromic-substring',
                         'string/longest-substring-without-repeating-characters',
+                        'string/minimum-window-substring'
                     ]
                 },
                 {
