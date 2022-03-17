@@ -3,7 +3,7 @@ title: 最小覆盖子串
 author: lvzl
 ---
 
-来源 [LeeCode](https://leetcode-cn.com/problems/minimum-window-substring/)
+来源 [力扣（LeetCode）](https://leetcode-cn.com/problems/minimum-window-substring/)
 
 
 > 给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
@@ -37,7 +37,7 @@ var minWindow = function(s, t) {
         if(!flag) return
         for(let i = 0; i < t.length; i++){
             const char = t.charAt(i) // 遍历t中的每一个字符
-            if(str.includes(char)) { // 判断str是否包含， 是把该字符替换为空，否则返回false
+            if(str.includes(char)) { // 判断str是否包含， 是 把该字符替换为空，否则返回false
                 str = str.replace(char, '') // 这里必须要替换，比如 str = 'ABCD', t = 'AABC', 不替换为空就会返回true
             } else {
                 flag = false
@@ -65,7 +65,7 @@ var minWindow = function(s, t) {
 
 ```
 
-## 优化解法 - Step1
+## 优化解法 - 1
 
 > 双指针代替嵌套的for循环，这种解法也通不过LeeCode的测试用例，时间超过限制。
 ```js
@@ -110,7 +110,7 @@ var minWindow = function(s, t) {
 
 ```
 
-## 优化解法 - Step2
+## 优化解法 - 2
 > 接下来优化allExist, 因为这里还有for循环
 
 > 执行用时：80 ms, 在所有 JavaScript 提交中击败了96%的用户
@@ -165,7 +165,7 @@ const minWindow = function(s, t) {
 };
 ```
 
-## 优化解法 - Step3
+## 优化解法 - 3
 > 上面每次都去substring, 我们换成记录索引试试
 
 > 执行用时：68 ms, 在所有 JavaScript 提交中击败了99.65%的用户

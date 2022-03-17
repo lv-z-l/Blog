@@ -3,7 +3,7 @@ title: 最长回文子串
 author: lvzl
 ---
 
-来源 [LeeCode](https://leetcode-cn.com/problems/longest-palindromic-substring)
+来源 [力扣（LeetCode）](https://leetcode-cn.com/problems/longest-palindromic-substring)
 
 
 > 给你一个字符串 s，找到 s 中最长的回文子串。

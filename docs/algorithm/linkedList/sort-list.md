@@ -3,7 +3,7 @@ title: 链表排序
 author: lvzl
 ---
 
-来源 [LeeCode](https://leetcode-cn.com/problems/sort-list/)
+来源 [力扣（LeetCode）](https://leetcode-cn.com/problems/sort-list/)
 
 > 给你链表的头结点 head ，请将其按 升序 排列并返回 排序后的链表 。
 

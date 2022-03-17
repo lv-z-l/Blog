@@ -3,7 +3,7 @@ title: 链表反转
 author: lvzl
 ---
 
-来源 [LeeCode](https://leetcode-cn.com/problems/reverse-linked-list/)
+来源 [力扣（LeetCode）](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 > 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表
 

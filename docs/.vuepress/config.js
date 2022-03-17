@@ -140,11 +140,22 @@ module.exports = {
                     ]
                 },
                 {
-                    title: '其他',
+                    title: '数组相关',
                     collapsable: false,
                     children: [
-                        'other/max-area',
+                        'array/container-with-most-water',
+                        'array/longest-continuous-increasing-subsequence',
+                        'array/longest-consecutive-sequence',
+                        'array/median-of-two-sorted-arrays',
+                        'array/remove-duplicates-from-sorted-array',
+                        'array/subarray-sum-equals-k',
+                        'array/two-sum'
                     ]
+                },
+                {
+                    title: '其他',
+                    collapsable: false,
+                    children: []
                 },
             ],
             '/write/': [
