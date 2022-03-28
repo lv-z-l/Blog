@@ -18,7 +18,7 @@ module.exports = {
             {
                 text: '流行框架',
                 items: [
-                    { text: 'Vue', link: '/vue/' },
+                    { text: 'Vue', link: '/vuejs/use' },
                     { text: 'React', link: '/react/' }
                 ]
             },
@@ -44,7 +44,7 @@ module.exports = {
             '/js/': [
                 {
                     title: '基础知识',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'basic/jsbasic',
                         'basic/es6'
@@ -58,7 +58,7 @@ module.exports = {
                         'deep/function',
                         {
                             title: '模块化',
-                            collapsable: false,
+                            collapsable: true,
                             children: [
                                 'deep/module/amd',
                                 'deep/module/cmd',
@@ -71,29 +71,42 @@ module.exports = {
                 },
                 {
                     title: '内功修炼',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'intention/memory',
                         {
                             title: '你需要知道的JS异步执行机制',
                             path: 'intention/excuterule'
                         }
-                       
+
                     ]
                 }
             ],
-            '/vue/': [
+            '/vuejs/': [
                 {
-                    title: 'Vue',
-                    collapsable: false,
+                    title: 'Vue2及其使用',
+                    collapsable: true,
                     children: [
+                        'use'
+                    ]
+                },
+                'build-package-desc',
+                {
+                    title: 'Vue2源码学习',
+                    collapsable: true,
+                    children: [
+                        'init',
+                        'mount',
+                        'reactive-function-desc',
+                        'evalute',
+                        'watcher-update'
                     ]
                 }
             ],
             '/react/': [
                 {
                     title: 'React',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                     ]
                 }
@@ -109,7 +122,7 @@ module.exports = {
             '/algorithm/': [
                 {
                     title: '买卖股票问题',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'agiotage/1',
                         'agiotage/2',
@@ -118,7 +131,7 @@ module.exports = {
                 },
                 {
                     title: '链表相关',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'linkedList/palindrome-linked-list',
                         'linkedList/reverse-linked-list',
@@ -131,7 +144,7 @@ module.exports = {
                 },
                 {
                     title: '字符串相关',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'string/longest-common-prefix',
                         'string/longest-palindromic-substring',
@@ -141,7 +154,7 @@ module.exports = {
                 },
                 {
                     title: '数组相关',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'array/container-with-most-water',
                         'array/longest-continuous-increasing-subsequence',
@@ -149,19 +162,22 @@ module.exports = {
                         'array/median-of-two-sorted-arrays',
                         'array/remove-duplicates-from-sorted-array',
                         'array/subarray-sum-equals-k',
-                        'array/two-sum'
+                        'array/two-sum',
+                        'array/two-sum-ii-input-array-is-sorted',
+                        'array/3sum',
+                        'array/4sum',
                     ]
                 },
                 {
                     title: '其他',
-                    collapsable: false,
+                    collapsable: true,
                     children: []
                 },
             ],
             '/write/': [
                 {
                     title: '手写系列',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'call_apply',
                         'bind',
@@ -175,7 +191,7 @@ module.exports = {
             '/designmode/': [
                 {
                     title: '设计模式',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'single',
                         'strategy'

@@ -22,6 +22,19 @@ var twoSum = function(nums, target) {
     }
 };
 
+var twoSum = function(nums, target) {
+    const map = new Map()
+    for(let i = 0; i < nums.length; i++){
+        const cha = target - nums[i]
+        if(map.has(cha)){
+            return [map.get(cha), i]
+        }
+        map.set(nums[i], i)
+    }
+};
+
+
+
 ```
 
 

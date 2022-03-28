@@ -29,8 +29,16 @@ author: lvzl
 
 ## 回文链表
 
-> 给你一个单链表的头节点 head ，请你判断该链表是否为回文链表。如果是，返回 true ；否则，返回 false 。
 来源: [力扣（LeetCode）](https://leetcode-cn.com/problems/palindrome-linked-list/)
+
+> 给你一个单链表的头节点 head ，请你判断该链表是否为回文链表。如果是，返回 true ；否则，返回 false 。
+
+> 输入：head = [1,2,2,1]
+> 输出：true
+
+> 输入：head = [1,2]
+> 输出：false
+
 ```js
 var isPalindrome = function (head) {
   if (!head || !head.next) {
