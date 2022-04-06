@@ -239,7 +239,7 @@ code .
 ```
 #### 工程目录
 
-![image-20210523200009374](C:\Users\lvzl\AppData\Roaming\Typora\typora-user-images\image-20210523200009374.png)
+<img :src="$withBase('/assets/img/dirtree.png')"></img>
 
 #### package.json
 
@@ -453,7 +453,7 @@ module.exports = {
 
 > 借助webpack-bundle-analyzer plugin对打包后的模块大小进行分析，从而进一步考虑还需要优化的文件
 
-![image-20210523211445575](C:\Users\lvzl\AppData\Roaming\Typora\typora-user-images\image-20210523211445575.png)
+<img :src="$withBase('/assets/img/analysis.png')"></img>
 
 ### 构建过程优化
 

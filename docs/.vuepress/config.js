@@ -29,6 +29,7 @@ module.exports = {
                     { text: '算法', link: '/algorithm/' },
                     { text: '手写', link: '/write/' },
                     { text: '设计模式', link: '/designmode/' },
+                    { text: '软连接&硬链接', link: '/hardlink&softlink/' },
                 ]
             }
         ],
@@ -52,7 +53,7 @@ module.exports = {
                 },
                 {
                     title: '深入知识',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         'deep/deep',
                         'deep/function',
@@ -60,10 +61,10 @@ module.exports = {
                             title: '模块化',
                             collapsable: true,
                             children: [
+                                'deep/module/early',
                                 'deep/module/amd',
                                 'deep/module/cmd',
                                 'deep/module/commonjs',
-                                'deep/module/early',
                                 'deep/module/es6_module'
                             ]
                         }
@@ -198,7 +199,6 @@ module.exports = {
                     ]
                 }
             ]
-
         },
         lastUpdated: 'Last Updated', // string | boolean
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
