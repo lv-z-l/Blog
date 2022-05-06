@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS作用域 | Blog</title>
+    <meta name="generator" content="VuePress 1.9.1">
+    
+    <meta name="description" content="学海无涯，回头是岸">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.0b264fdc.css" as="style"><link rel="preload" href="/blog/assets/js/app.72776593.js" as="script"><link rel="preload" href="/blog/assets/js/3.d6f547a4.js" as="script"><link rel="preload" href="/blog/assets/js/1.b26f7161.js" as="script"><link rel="preload" href="/blog/assets/js/52.3d92f720.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.0b11cee9.js"><link rel="prefetch" href="/blog/assets/js/11.e5406847.js"><link rel="prefetch" href="/blog/assets/js/12.669cf4e9.js"><link rel="prefetch" href="/blog/assets/js/13.e9ebc184.js"><link rel="prefetch" href="/blog/assets/js/14.c36f62eb.js"><link rel="prefetch" href="/blog/assets/js/15.90327f8c.js"><link rel="prefetch" href="/blog/assets/js/16.6eb71f2e.js"><link rel="prefetch" href="/blog/assets/js/17.5be4ae9f.js"><link rel="prefetch" href="/blog/assets/js/18.59be6d1f.js"><link rel="prefetch" href="/blog/assets/js/19.6d892401.js"><link rel="prefetch" href="/blog/assets/js/20.e0a8719f.js"><link rel="prefetch" href="/blog/assets/js/21.eac23dfc.js"><link rel="prefetch" href="/blog/assets/js/22.84358969.js"><link rel="prefetch" href="/blog/assets/js/23.9cf91928.js"><link rel="prefetch" href="/blog/assets/js/24.f66024cf.js"><link rel="prefetch" href="/blog/assets/js/25.c8e69ec5.js"><link rel="prefetch" href="/blog/assets/js/26.5a3de8e3.js"><link rel="prefetch" href="/blog/assets/js/27.f58607c5.js"><link rel="prefetch" href="/blog/assets/js/28.2a7af44d.js"><link rel="prefetch" href="/blog/assets/js/29.3c4fd41b.js"><link rel="prefetch" href="/blog/assets/js/30.6936f7b2.js"><link rel="prefetch" href="/blog/assets/js/31.4d01f550.js"><link rel="prefetch" href="/blog/assets/js/32.2c797623.js"><link rel="prefetch" href="/blog/assets/js/33.b71f9c7b.js"><link rel="prefetch" href="/blog/assets/js/34.f10cdfaa.js"><link rel="prefetch" href="/blog/assets/js/35.a1ec219f.js"><link rel="prefetch" href="/blog/assets/js/36.a0072987.js"><link rel="prefetch" href="/blog/assets/js/37.8a6ecc93.js"><link rel="prefetch" href="/blog/assets/js/38.a7c2c125.js"><link rel="prefetch" href="/blog/assets/js/39.b2ae4ad1.js"><link rel="prefetch" href="/blog/assets/js/4.2064d4f2.js"><link rel="prefetch" href="/blog/assets/js/40.14c7034e.js"><link rel="prefetch" href="/blog/assets/js/41.24b0f314.js"><link rel="prefetch" href="/blog/assets/js/42.90b7b736.js"><link rel="prefetch" href="/blog/assets/js/43.dd42d28a.js"><link rel="prefetch" href="/blog/assets/js/44.5560e42e.js"><link rel="prefetch" href="/blog/assets/js/45.85ed3edf.js"><link rel="prefetch" href="/blog/assets/js/46.e010f814.js"><link rel="prefetch" href="/blog/assets/js/47.93b29930.js"><link rel="prefetch" href="/blog/assets/js/48.a6defb5d.js"><link rel="prefetch" href="/blog/assets/js/49.6d302d20.js"><link rel="prefetch" href="/blog/assets/js/5.167c1fe2.js"><link rel="prefetch" href="/blog/assets/js/50.c9b0cb3d.js"><link rel="prefetch" href="/blog/assets/js/51.11dfcdf8.js"><link rel="prefetch" href="/blog/assets/js/53.ff6e3748.js"><link rel="prefetch" href="/blog/assets/js/54.ba55226d.js"><link rel="prefetch" href="/blog/assets/js/55.a63a9851.js"><link rel="prefetch" href="/blog/assets/js/56.5bf562c0.js"><link rel="prefetch" href="/blog/assets/js/57.cb341eb2.js"><link rel="prefetch" href="/blog/assets/js/58.7f40a294.js"><link rel="prefetch" href="/blog/assets/js/59.cbfc1a2e.js"><link rel="prefetch" href="/blog/assets/js/6.1bbf5093.js"><link rel="prefetch" href="/blog/assets/js/60.e142197b.js"><link rel="prefetch" href="/blog/assets/js/61.70ddc207.js"><link rel="prefetch" href="/blog/assets/js/62.d018fe22.js"><link rel="prefetch" href="/blog/assets/js/63.ec8942aa.js"><link rel="prefetch" href="/blog/assets/js/64.1b1f5e4f.js"><link rel="prefetch" href="/blog/assets/js/65.8ece1e1b.js"><link rel="prefetch" href="/blog/assets/js/66.aea8f4b2.js"><link rel="prefetch" href="/blog/assets/js/67.f7a15e56.js"><link rel="prefetch" href="/blog/assets/js/68.d8ebb8ea.js"><link rel="prefetch" href="/blog/assets/js/69.646f692a.js"><link rel="prefetch" href="/blog/assets/js/7.12674e13.js"><link rel="prefetch" href="/blog/assets/js/70.4ca8a3c3.js"><link rel="prefetch" href="/blog/assets/js/71.0b1651da.js"><link rel="prefetch" href="/blog/assets/js/72.6a141dd0.js"><link rel="prefetch" href="/blog/assets/js/73.52dcf1cb.js"><link rel="prefetch" href="/blog/assets/js/74.1157b9f7.js"><link rel="prefetch" href="/blog/assets/js/75.bb772820.js"><link rel="prefetch" href="/blog/assets/js/76.635c2261.js"><link rel="prefetch" href="/blog/assets/js/8.6d569f77.js"><link rel="prefetch" href="/blog/assets/js/9.ba301105.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.0b264fdc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Blog</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>学海无涯，回头是岸</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/html5/" class="nav-link"><i class="undefined"></i>
+  Html &amp; css
+</a></div><div class="nav-item"><a href="/blog/js/basic/jsbasic.html" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      流行框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/vuejs/use.html" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/react/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      更多
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pack/" class="nav-link"><i class="undefined"></i>
+  WebPack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/algorithm/" class="nav-link"><i class="undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/blog/write/" class="nav-link"><i class="undefined"></i>
+  手写
+</a></li><li class="dropdown-item"><!----> <a href="/blog/designmode/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blog/hardlink&amp;softlink/" class="nav-link"><i class="undefined"></i>
+  软连接&amp;硬链接
+</a></li></ul></div></div> <a href="https://gitee.com/lvzhenglei/blog" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-查看源码"></i>
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>60</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/html5/" class="nav-link"><i class="undefined"></i>
+  Html &amp; css
+</a></div><div class="nav-item"><a href="/blog/js/basic/jsbasic.html" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      流行框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/vuejs/use.html" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/react/" class="nav-link"><i class="undefined"></i>
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      更多
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pack/" class="nav-link"><i class="undefined"></i>
+  WebPack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/algorithm/" class="nav-link"><i class="undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/blog/write/" class="nav-link"><i class="undefined"></i>
+  手写
+</a></li><li class="dropdown-item"><!----> <a href="/blog/designmode/" class="nav-link"><i class="undefined"></i>
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/blog/hardlink&amp;softlink/" class="nav-link"><i class="undefined"></i>
+  软连接&amp;硬链接
+</a></li></ul></div></div> <a href="https://gitee.com/lvzhenglei/blog" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-查看源码"></i>
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>深入知识</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/deep/deep.html" class="sidebar-link">进阶相关总览</a></li><li><a href="/blog/js/deep/function.html" class="sidebar-link">深入理解函数</a></li><li><a href="/blog/js/deep/js_closure.html" class="sidebar-link">深入理解闭包</a></li><li><a href="/blog/js/deep/js_oop.html" class="sidebar-link">JS面向对象编程</a></li><li><a href="/blog/js/deep/js_scope.html" aria-current="page" class="active sidebar-link">JS作用域</a></li><li><a href="/blog/js/deep/js_this.html" class="sidebar-link">深入理解this指向</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>模块化</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>内功修炼</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">JS作用域</h1> <div data-v-f875f3fc><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h2 id="js作用域"><a href="#js作用域" class="header-anchor">#</a> JS作用域</h2> <p>​ JavaScript拥有一套设计良好的规则来存储变量，并且之后可以方便地找到这些变量，这套规则被称为作用域。
+在js中作用域分为全局作用域和函数作用域，函数作用域可以互相嵌套。
+每个函数都会创建自己的作用域，作用域在函数定义的时候就已经确定了，与函数是否被调用无关。
+通过作用域，可以知道作用域范围内的变量和函数有哪些，却不知道变量的值是什么。所以作用域是静态的。</p> <h3 id="作用域内部原理"><a href="#作用域内部原理" class="header-anchor">#</a> 作用域内部原理</h3> <ul><li><p>预编译</p> <p>以 var a = 2;为例。
+简单来说，编译过程就是编译器把程序分解成词法单元(token)，然后把词法单元解析成语法树(AST)，再把语法树变成机器指令等待执行的过程。</p> <ul><li><p>分词</p> <p>var a = 2;被分解成为下面这些词法单元：var、a、=、2、;。这些词法单元组成了一个词法单元流数组。
+// 词法分析后的结果
+[
+ &quot;var&quot; : &quot;keyword&quot;, //关键字
+ &quot;a&quot; : &quot;identifier&quot;,//标识符
+ &quot;=&quot;  : &quot;assignment&quot;,//分配
+ &quot;2&quot; : &quot;integer&quot;,//整数
+ &quot;;&quot;  : &quot;eos&quot; (end of statement)//结束语句
+]</p></li> <li><p>代码生成</p> <p>将AST转换为可执行代码的过程被称为代码生成
+​var a=2;的抽象语法树转为一组机器指令，用来创建一个叫作a的变量(包括分配内存等)，并将值2储存在a中。
+​实际上，javascript引擎的编译过程要复杂得多，包括大量优化操作，上面的三个步骤是编译过程的基本概述。
+任何代码片段在执行前都要进行编译，大部分情况下编译发生在代码执行前的几微秒。javascript编译器首先会对var a=2;这段程序进行编译，然后做好执行它的准备，并且通常马上就会执行它。</p></li> <li><p>解析</p> <p>把词法单元流数组转换成一个由元素逐级嵌套所组成的代表程序语法结构的树，这个树被称为“抽象语法树” (Abstract Syntax Tree, AST)。
+VariableDeclaration：{
+ operation: &quot;=&quot;,
+ left: {
+  keyword: &quot;var&quot;,
+  right: &quot;a&quot;
+ }
+ right: &quot;2&quot;
+}</p></li></ul></li> <li><p>查询</p> <p>从字面意思去理解，当变量出现在赋值操作的左侧时进行LHS查询，出现在右侧时进行RHS查询。
+更准确地讲，RHS查询与简单地查找某个变量的值没什么区别，而LHS查询则是试图找到变量的容器本身，从而可以对其赋值。
+function foo(a){
+  console.log(a);//2
+}
+foo( 2 );
+这段代码中，总共包括4个查询，分别是：
+1、foo(…)对foo进行了RHS引用
+2、函数传参a = 2对a进行了LHS引用
+3、console.log(…)对console对象进行了RHS引用，并检查其是否有一个log的方法
+4、console.log(a)对a进行了RHS引用，并把得到的值传给了console.log(…)</p> <ul><li>LHS查询</li> <li>RHS查询</li></ul></li> <li><p>执行</p> <p>经过编译之后，代码会开始执行
+引擎运行时会首先查询作用域，在当前的作用域集合中是否存在一个叫作a的变量。如果是，引擎就会使用这个变量，并且把这个已经存在的a的值设置为2；如果否，引擎就会在当前作用域创建一个叫作a的变量并赋值2。
+依据编译器的编译原理，javascript中的重复声明是合法的</p></li> <li><p>嵌套</p> <p>在当前作用域中无法找到某个变量时，引擎就会在外层嵌套的作用域中继续查找，直到找到该变量，或抵达最外层的作用域（也就是全局作用域）为止。</p></li> <li><p>异常</p> <p>RHS查询失败，引擎会抛出ReferenceError(引用错误)异常
+如果RHS查询找到了一个变量，但尝试对变量的值进行不合理操作，比如对一个非函数类型值进行函数调用，或者引用null或undefined中的属性，引擎会抛出另外一种类型异常：TypeError(类型错误)异常
+当引擎执行LHS查询时，如果无法找到变量，全局作用域会创建一个具有该名称的变量，并将其返还给引擎。
+如果在严格模式中LHS查询失败时，并不会创建并返回一个全局变量，引擎会抛出同RHS查询失败时类似的ReferenceError异常</p></li></ul> <h3 id="词法作用域"><a href="#词法作用域" class="header-anchor">#</a> 词法作用域</h3> <p>词法作用域就是定义在词法阶段的作用域，是由写代码时将变量和块作用域写在哪里来决定的，因此当词法分析器处理代码时会保持作用域不变。
+无论函数在哪里被调用，也无论它如何被调用，它的词法作用域都只由函数被声明时所处的位置决定。</p> <h3 id="动态作用域"><a href="#动态作用域" class="header-anchor">#</a> 动态作用域</h3> <p>动态作用域并不关心函数和作用域是如何声明以及在任何处声明的，只关心它们从何处调用。换句话说，作用域链是基于调用栈的，而不是代码中的作用域嵌套。
+var a = 2;
+function foo() {
+  console.log( a );
+}
+function bar() {
+  var a = 3;
+  foo();
+}
+bar();
+词法作用域：输出为2
+动态作用域：输出为3
+两种作用域的区别：
+简而言之，词法作用域是在定义时确定的，而动态作用域是在运行时确定的</p> <h3 id="遮蔽效应"><a href="#遮蔽效应" class="header-anchor">#</a> 遮蔽效应</h3> <p>作用域查找从运行时所处的最内部作用域开始，逐级向外或者说向上进行，直到遇见第一个匹配的标识符为止。
+​在多层的嵌套作用域中可以定义同名的标识符，这叫作“遮蔽效应”，内部的标识符“遮蔽”了外部的标识符。</p> <h3 id="作用域链"><a href="#作用域链" class="header-anchor">#</a> 作用域链</h3> <p>各个作用域的嵌套关系组成了一条作用域链。
+使用作用域链主要是进行标识符(变量和函数)的查询，标识符(变量和哈数)解析就是沿着作用域链一级一级地搜索标识符的过程，而作用域链就是保证对变量和函数的有序访问。
+如果自身作用域中声明该变量，则无需使用作用域链。
+如果自身作用域中未声明该变量，则需要使用作用域链进行查找
+如果标识符找不到，则抛出ReferenceError(引用错误)异常。</p> <h3 id="自由变量"><a href="#自由变量" class="header-anchor">#</a> 自由变量</h3> <p>自由变量就是在当前作用域中存在但未在当前作用域中声明的变量</p> <h3 id="执行环境"><a href="#执行环境" class="header-anchor">#</a> 执行环境</h3> <p>执行环境(execution context) 也叫执行上下文、执行上下文环境。
+执行上下文环境在函数调用时确定的。
+每个执行上下文环境包含了作用域内所有的变量和函数的值。
+​一定要区分执行环境和变量对象。执行环境会随着函数的调用和返回，不断的重建和销毁。但变量对象在有变量引用的情况下，将留在内存中不被销毁。
+执行上下文环境是动态的。</p> <h3 id="执行流"><a href="#执行流" class="header-anchor">#</a> 执行流</h3> <p>代码的执行顺序叫做执行流，程序源代码并不是按照代码的书写顺序一行一行往下执行，而是和函数的调用顺序有关。</p> <h3 id="执行环境栈"><a href="#执行环境栈" class="header-anchor">#</a> 执行环境栈</h3> <p>执行环境栈有序地保存着当前程序中存在的执行环境。当执行流进入一个函数时，函数的环境会被压入一个环境栈中。而在函数执行之后，栈将其环境弹出，把控制权返回给之前的执行环境。javascript程序中的执行流正是由这个机制控制。
+其实就是一个压栈出栈的过程。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/js/deep/js_oop.html" class="prev">
+            JS面向对象编程
+          </a></span> <span class="next"><a href="/blog/js/deep/js_this.html">
+            深入理解this指向
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.72776593.js" defer></script><script src="/blog/assets/js/3.d6f547a4.js" defer></script><script src="/blog/assets/js/1.b26f7161.js" defer></script><script src="/blog/assets/js/52.3d92f720.js" defer></script>
+  </body>
+</html>

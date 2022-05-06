@@ -57,6 +57,10 @@ module.exports = {
                     children: [
                         'deep/deep',
                         'deep/function',
+                        'deep/js_closure',
+                        'deep/js_oop',
+                        'deep/js_scope',
+                        'deep/js_this',
                         {
                             title: '模块化',
                             collapsable: true,
