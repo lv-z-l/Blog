@@ -5,20 +5,24 @@ module.exports = {
     base: '/blog/',
     theme: 'reco',
     themeConfig: {
-        // logo: '',
+        logo: '/assets/img/tiger.jpg',
         nav: [
             {
-                text: 'Html & css',
-                link: '/html5/'
+                text: 'html & css',
+                link: '/html5css/html/html'
             },
             {
                 text: 'JavaScript',
                 link: '/js/basic/jsbasic'
             },
+            { text: '算法', link: '/algorithm/' },
+            { text: '设计模式', link: '/designmode/' },
+            { text: '八股文', link: '/somethingYouNeedKnow/url' },
             {
                 text: '流行框架',
                 items: [
-                    { text: 'Vue', link: '/vuejs/use' },
+                    { text: 'Vue2', link: '/vuejs/use' },
+                    { text: 'Vue3', link: '/vuejs3/use' },
                     { text: 'React', link: '/react/' }
                 ]
             },
@@ -26,19 +30,28 @@ module.exports = {
                 text: '更多',
                 items: [
                     { text: 'WebPack', link: '/pack/' },
-                    { text: '算法', link: '/algorithm/' },
                     { text: '手写', link: '/write/' },
-                    { text: '设计模式', link: '/designmode/' },
                     { text: '软连接&硬链接', link: '/hardlink&softlink/' },
                 ]
             }
         ],
         sidebar: {
-            '/html5/': [
+            '/html5css/': [
                 {
-                    title: 'Html相关',
-                    collapsable: false,
+                    title: 'html',
+                    collapsable: true,
                     children: [
+                        'html/html',
+                    ]
+                },
+                {
+                    title: 'css',
+                    collapsable: true,
+                    children: [
+                        'css/css',
+                        'css/css_offset_client_scroll',
+                        'css/css_display',
+                        'css/css_position',
                     ]
                 }
             ],
@@ -174,6 +187,12 @@ module.exports = {
                     ]
                 },
                 {
+                    title: '树相关',
+                    collapsable: true,
+                    children: [
+                    ]
+                },
+                {
                     title: '其他',
                     collapsable: true,
                     children: []
@@ -200,6 +219,15 @@ module.exports = {
                     children: [
                         'single',
                         'strategy'
+                    ]
+                }
+            ],
+            '/somethingYouNeedKnow/': [
+                {
+                    title: '前端八股文',
+                    collapsable: true,
+                    children: [
+                        'url'
                     ]
                 }
             ]
