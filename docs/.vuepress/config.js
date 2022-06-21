@@ -5,6 +5,8 @@ module.exports = {
     base: '/blog/',
     theme: 'reco',
     themeConfig: {
+        sidebarDepth: 2,
+        displayAllHeaders: true,
         logo: '/assets/img/tiger.jpg',
         nav: [
             {
