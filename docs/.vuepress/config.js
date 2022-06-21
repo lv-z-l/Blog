@@ -74,17 +74,18 @@ module.exports = {
                         'deep/js_oop',
                         'deep/js_scope',
                         'deep/js_this',
-                        {
-                            title: '模块化',
-                            collapsable: true,
-                            children: [
-                                'deep/module/early',
-                                'deep/module/amd',
-                                'deep/module/cmd',
-                                'deep/module/commonjs',
-                                'deep/module/es6_module'
-                            ]
-                        }
+                    ]
+                },
+                {
+                    title: '模块化',
+                    collapsable: true,
+                    children: [
+                        'deep/module/early',
+                        'deep/module/amd',
+                        'deep/module/cmd',
+                        'deep/module/commonjs',
+                        'deep/module/es6_module',
+                        'deep/module/diff'
                     ]
                 },
                 {

@@ -300,10 +300,10 @@ CSS 的导入方式
 | [._class_](https://www.runoob.com/cssref/sel-class.html)                                   | .intro                | 选择所有 class="intro"的元素                                 | 1   |
 | [#_id_](https://www.runoob.com/cssref/sel-id.html)                                         | #firstname            | 选择所有 id="firstname"的元素                                | 1   |
 | [\*](https://www.runoob.com/cssref/sel-all.html)                                           | \*                    | 选择所有元素                                                 | 2   |
-| _[element](https://www.runoob.com/cssref/sel-element.html)_                                | p                     | 选择所有 p元素                                              | 1   |
+| _[element](https://www.runoob.com/cssref/sel-element.html)_                                | p                     | 选择所有 p 元素                                              | 1   |
 | _[element,element](https://www.runoob.com/cssref/sel-element-comma.html)_                  | div,p                 | 选择所有 div 元素和 p 元素                                   | 1   |
 | [_element_ _element_](https://www.runoob.com/cssref/sel-element-element.html)              | div p                 | 选择 div 元素内的所有 p 元素                                 | 1   |
-| [_element_>_element_](https://www.runoob.com/cssref/sel-element-gt.html)                   | div>p                 | 选择所有父级是 div 元素的 p 元素                         | 2   |
+| [_element_>_element_](https://www.runoob.com/cssref/sel-element-gt.html)                   | div>p                 | 选择所有父级是 div 元素的 p 元素                             | 2   |
 | [_element_+_element_](https://www.runoob.com/cssref/sel-element-pluss.html)                | div+p                 | 选择所有紧接着 div 元素之后的 p 元素                         | 2   |
 | [[*attribute*\]](https://www.runoob.com/cssref/sel-attribute.html)                         | [target]              | 选择所有带有 target 属性元素                                 | 2   |
 | [[*attribute*=*value*\]](https://www.runoob.com/cssref/sel-attribute-value.html)           | [target=-blank]       | 选择所有使用 target="-blank"的元素                           | 2   |
@@ -427,7 +427,7 @@ body {
 - font-size： 字体大小
 - text-decoration : none 无修饰；underline：下划线；overline 上划线；line-through：穿过文本的线。
 - font-weight：字体粗细
-- i标签 斜体
+- i 标签 斜体
 - font-family：字体样式
 - background 背景
 - border 边框
