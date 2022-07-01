@@ -34,6 +34,7 @@ module.exports = {
                     { text: 'WebPack', link: '/pack/' },
                     { text: '手写', link: '/write/' },
                     { text: '软连接&硬链接', link: '/hardlink&softlink/' },
+                    { text: '聊聊 npm & yarn & pnpm 包管理机制', link: '/packagemanager/' },
                 ]
             }
         ],
@@ -211,7 +212,8 @@ module.exports = {
                         'new',
                         'promise',
                         'instanceof',
-                        'objcreate'
+                        'objcreate',
+                        'async&await'
                     ]
                 }
             ],

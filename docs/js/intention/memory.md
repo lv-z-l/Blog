@@ -26,7 +26,7 @@ author: lvzl
 
 32位：新生代16MB  老生代700MB
 
-<img :src="$withBase('/assets/img/v8_memory.png')"></img>
+<img :src="$withBase('/assets/img/V8_memory.png')"></img>
 
 
 
