@@ -93,23 +93,12 @@ module1就是Javascript模块的基本写法。下面，再对这种写法进行
 ### **四、模块的标准写法**
 
 ```js
-(function(window){
+define(function(require, exports, module) {
+    'use strict';
+    var moduleIndex = require('./index.js')
+});
 
-    var _count = 0;
-
-    function m1(){
-        //...
-    };
-
-    function m2(){
-        //...
-    };
-    window.module1 = {
-        m1,
-        m2
-    };
-
-})(window);
+defi
 ```
 
 ### **五、放大模式**

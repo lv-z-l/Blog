@@ -55,6 +55,7 @@ module.exports = {
                         'css/css_offset_client_scroll',
                         'css/css_display',
                         'css/css_position',
+                        'css/css_center'
                     ]
                 }
             ],
@@ -77,12 +78,14 @@ module.exports = {
                         'deep/js_oop',
                         'deep/js_scope',
                         'deep/js_this',
+                        'deep/declareVariable',
                     ]
                 },
                 {
                     title: '模块化',
                     collapsable: true,
                     children: [
+                        'deep/module/preview',
                         'deep/module/early',
                         'deep/module/amd',
                         'deep/module/cmd',
