@@ -9,7 +9,7 @@ author: lvzl
 
 比如下面的两个函数：
 ```js
-// 在1s后返回promise
+// 在1s后resolve promise
 function fn1() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -17,7 +17,7 @@ function fn1() {
     }, 1000)
   })
 }
-// 在2s后返回promise
+// 在2s后resolve promise
 function fn2() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
