@@ -34,7 +34,8 @@ module.exports = {
           { text: 'WebPack', link: '/pack/' },
           { text: '手写', link: '/write/' },
           { text: '软连接&硬链接', link: '/hardlink&softlink/' },
-          { text: '聊聊 npm & yarn & pnpm 包管理机制', link: '/packagemanager/' }
+          { text: '聊聊 npm & yarn & pnpm 包管理机制', link: '/packagemanager/' },
+          { text: '前端路由', link: '/webrouter/' }
         ]
       }
     ],
