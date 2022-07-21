@@ -14,6 +14,7 @@ author: lvzl
 export default class Base {
   constructor(option) {
     this._option = option
+    this.routes = option.routes
     this.viewContiner = document.body.querySelector(option.selector)
   }
   render() {
@@ -38,7 +39,6 @@ export default class Hash extends Base {
   constructor(option) {
     super(option)
     this.location = window.location
-    this.routes = option.routes
     window.addEventListener('hashchange', e => {
       this.render()
     })
@@ -71,9 +71,7 @@ import Base from './Base.js'
 export default class History extends Base {
   constructor(option) {
     super(option)
-    this.routes = option.routes
     this.history = window.history
-    this.viewContiner = document.body.querySelector(option.selector)
     window.addEventListener('popstate', e => {
       this.render()
     })
