@@ -211,7 +211,7 @@ Function.prototype.myApply = function(ctx, argu = []){
   const funcId = Symbol()
   ctx[funcId] = this
   const result = ctx[funcId](...argu)
-  delete ctx[funcId]
+  Reflect.deleteProperty(ctx, 'funcId')
   return result
 }
 ```

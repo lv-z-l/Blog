@@ -27,8 +27,8 @@
         <button onclick="router.replace('/user')">replace('/user')</button>
       </div>
       <div id="app-view"></div>
-      <div style="width: 200px; height: 200px"></div>
     </div>
+    <div style="width: 200px; height: 200px"></div>
   </body>
   <script type="module">
     import Router from './Router.js'
@@ -73,6 +73,18 @@
         1024
       )
     }
-    getLocalStorageSize()
+    // Array.prototype.reduce((previousValue, currentValue, currentIndex, array) => {}, initialValue)
+    Array.prototype.myReduce = function (fn, initVal) {
+      const arr = this
+      let res = initVal
+      arr.forEach((item, index) => {
+        res = fn.apply(arr, [res, item, index, arr])
+      })
+      return res
+    }
+    const arr = [1, 2, 3, 4, 5]
+    const val = arr.myReduce((pre, current) => pre + current, 0)
+    console.log(val)
+    // getLocalStorageSize()
   </script>
 </html>

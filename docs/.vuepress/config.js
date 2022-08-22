@@ -143,7 +143,7 @@ module.exports = {
         {
           title: '手写系列',
           collapsable: true,
-          children: ['call_apply', 'bind', 'new', 'promise', 'instanceof', 'objcreate', 'async&await']
+          children: ['call_apply', 'bind', 'new', 'promise', 'instanceof', 'objcreate', 'async&await', 'reduce', 'storage_size']
         }
       ],
       '/designmode/': [
@@ -157,7 +157,7 @@ module.exports = {
         {
           title: '前端八股文',
           collapsable: true,
-          children: ['url', 'http-cache']
+          children: ['url', 'http-cache', 'cross-origin']
         }
       ]
     },
