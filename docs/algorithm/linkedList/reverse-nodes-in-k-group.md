@@ -10,6 +10,7 @@ author: lvzl
 > 输入：head = [1,2,3,4,5], k = 2
 > 输出：[2,1,4,3,5]
 
+## 第一种
 ```js
 var reverseKGroup = function (head, k) {
   let arr = [];
@@ -33,6 +34,51 @@ var reverseKGroup = function (head, k) {
   return res.next
 };
 
+```
+
+## 第二种
+
+```js
+var reverseKGroup = function(head, k) {
+    const groupEnds = []
+    let groupSatrt = head
+    let index = 0
+    while(head) {
+        index += 1
+        if(index === k){
+            index = 0
+            const next = head.next
+            head.next = null
+            groupEnds.push(reverse(groupSatrt))
+            groupSatrt = next
+            head = next
+        } else if(head.next === null) {
+            groupEnds.push(groupSatrt)
+            head = head.next
+        } else {
+            head = head.next
+        }
+    }
+    for(let i = 0; i< groupEnds.length; i++) {
+        let ele = groupEnds[i]
+        while(ele.next) {
+            ele = ele.next
+        }
+        ele.next = groupEnds[i+1] || null
+    }
+    return groupEnds[0]
+};
+// 反转链表
+const reverse = function(head) {
+    let pre = null
+    while(head) {
+        const next = head.next
+        head.next = pre
+        pre = head
+        head = next
+    }
+    return pre
+}
 ```
 
 
