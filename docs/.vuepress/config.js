@@ -143,7 +143,7 @@ module.exports = {
         {
           title: '手写系列',
           collapsable: true,
-          children: ['call_apply', 'bind', 'new', 'promise', 'instanceof', 'objcreate', 'async&await', 'reduce', 'storage_size']
+          children: ['call_apply', 'bind', 'new', 'promise', 'instanceof', 'objcreate', 'async&await', 'reduce', 'storage_size', 'hex2Rgb', 'deep_clone']
         }
       ],
       '/designmode/': [

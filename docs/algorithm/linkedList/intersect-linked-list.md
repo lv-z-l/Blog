@@ -6,6 +6,7 @@ author: lvzl
 来源 [力扣（LeetCode）](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 
 > 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。
+
 <img src="https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png"/>
 
 ## 哈希集合
